@@ -1,16 +1,72 @@
-# React + Vite
+# 📝 Todo App (Redux Toolkit)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Todo application built using **Redux Toolkit** for state management. It demonstrates a scalable and structured approach to handling application state.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* ➕ Add new todos
+* ✏️ Edit existing todos
+* ❌ Delete todos
+* 💾 Persistent storage using Local Storage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Functional Components + Hooks)
+* Redux Toolkit
+* React-Redux
+* JavaScript (ES6+)
+* Tailwind CSS
+
+---
+
+## 🧠 How It Works
+
+* State is managed in a centralized **store**
+* Slices are created using `createSlice()`
+* Actions are dispatched using `dispatch()`
+* Components access state using `useSelector`
+* State changes handled via reducers
+
+---
+
+## 📂 Project Structure
+
+```id="rdx001"
+src/
+│── app/store.js
+│── features/todoSlice.js
+│── components
+│── App.jsx
+│── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash id="rdx002"
+npm install
+npm run dev
+```
+
+---
+
+## 💡 When to Use Redux
+
+* Medium to large-scale applications
+* Complex state logic
+* When multiple components need shared state
+
+---
+
+## 🙌 Learning Outcome
+
+This project helped in understanding:
+
+* Centralized state management
+* Redux Toolkit workflow
+* Scalable project architecture
