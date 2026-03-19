@@ -1,16 +1,70 @@
-# React + Vite
+# 📝 Todo App (Context API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Todo application built using **React Context API** for state management. It demonstrates how to manage global state without external libraries like Redux.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* ➕ Add new todos
+* ✏️ Edit existing todos
+* ❌ Delete todos
+* ✅ Mark tasks as completed
+* 💾 Persistent storage using Local Storage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Functional Components + Hooks)
+* Context API (State Management)
+* JavaScript (ES6+)
+* Tailwind CSS
+
+---
+
+## 🧠 How It Works
+
+* A global context is created using `createContext()`
+* State is managed using `useState` or `useReducer`
+* Components access data using `useContext`
+* Eliminates prop drilling by sharing state globally
+
+---
+
+## 📂 Project Structure
+
+```id="ctx001"
+src/
+│── contexts/
+│── components/
+│── App.jsx
+│── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash id="ctx002"
+npm install
+npm run dev
+```
+
+---
+
+## 💡 When to Use Context API
+
+* Small to medium-sized applications
+* When state sharing is simple
+* When you want to avoid extra libraries
+
+---
+
+## 🙌 Learning Outcome
+
+This project helped in understanding:
+
+* Global state management in React
+* Avoiding prop drilling
+* Clean component structure
